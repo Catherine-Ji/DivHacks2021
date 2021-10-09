@@ -3,3 +3,20 @@
 .navbar-custom{
 	background-color:#CC7B7D;
 }
+.body{
+	background-color:#AEDDE9;
+}
+.h1 {
+	text-align:center;
+	vertical-align: center;
+    
+}
+#header p {
+    text-align:center;
+	vertical-align: center;
+}
+iframe{
+    margin-left: 25%;
+	margin-bottom:2.5%;
+	margin-top:2.5%;
+}
