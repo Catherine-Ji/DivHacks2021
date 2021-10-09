@@ -1,0 +1,51 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Wellness App</title>
+<link href="bootstrap-4.4.1.css" rel="stylesheet" type="text/css">
+<link href="stylesheet.css" rel="stylesheet" type="text/css">
+</head>
+
+<body style="padding-top: 70px">
+<nav class="navbar fixed-top navbar-expand-lg navbar-dark navbar-custom"> <a class="navbar-brand" href="#">Wellness App</a>
+	  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent1" aria-controls="navbarSupportedContent1" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> </button>
+	  <div class="collapse navbar-collapse" id="navbarSupportedContent1">
+	    <ul class="navbar-nav mr-auto">
+	      <li class="nav-item active"> <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a> </li>
+		  <li class="nav-item"> <a class="nav-link" href="#">Activities</a> </li>
+			<li class="nav-item"> <a class="nav-link" href="#">Achievements</a> </li>
+			<li class="nav-item"> <a class="nav-link" href="#">Daily Survey</a> </li>
+			<li class="nav-item"> <a class="nav-link" href="#">Gratitude</a> </li>
+			<li class="nav-item"> <a class="nav-link" href="quotes.html">Inspirational Quotes</a> </li>
+		  <li class="nav-item"> <a class="nav-link" href="#">Meditation</a> </li>
+        </ul>
+	    
+  </div>
+</nav>
+<div>
+	<h1>Daily Inspirational Quotes!</h1>
+	<div id="displayQuote">
+		<script>
+			function generateQuote(){
+				var dict = [
+                    "Keep your face to the sunshine and you cannot see a shadow.-Helen Keller",
+                    "Success is not final, failure is not fatal: it is the courage to continue that counts.-Winston Churchill",
+                     "Nothing is impossible, the word itself says 'I'm possible'-Audrey Hepburn",
+                    "I can't change the direction of the wind, but I can adjust my sails to always reach my destination.-Jimmy Dean",
+                    "It is never too late to be what you might have been.-George Eliot"
+                ];
+				var randomN = Math.floor(Math.random() * dict.length);
+				document.getElementById('displayQuote').innerHTML = dict[randomN];
+			}
+		</script>
+	</div>
+	<button onClick=generateQuote()> Generate a New Quote</button>
+</div>
+<script src="../ITGS IA/Unnamed Site 2/js/jquery-3.4.1.min.js"></script>
+<script src="../ITGS IA/Unnamed Site 2/js/popper.min.js"></script>
+<script src="../ITGS IA/Unnamed Site 2/js/bootstrap-4.4.1.js"></script>
+</body>
+</html>
