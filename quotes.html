@@ -29,26 +29,25 @@
 <div>
 	<div class="title">Daily Inspirational Quotes</div>
     <h3 class="description">Welcome to the Inspiration Quotes page, a place where we can offer you a little mood boost🥰 <br>Click on the button below to view a new quote!</h3>
-    <div class="container"></div>
-        <div id="displayQuote">
-            <script>
-                function generateQuote(){
-                    var dict = [
-                        "“Keep your face to the sunshine and you cannot see a shadow.” - Helen Keller",
-                        "“Success is not final, failure is not fatal: it is the courage to continue that counts.” - Winston Churchill",
-                        "“Nothing is impossible, the word itself says 'I'm possible'” - Audrey Hepburn",
-                        "“I can't change the direction of the wind, but I can adjust my sails to always reach my destination.” - Jimmy Dean",
-                        "“It is never too late to be what you might have been.” - George Eliot",
-                        "“Believe you can and you’re halfway there.” - Theodore Roosevelt",
-                        "“The only way to do great work is to love what you do. If you haven’t found it yet, keep looking. Don’t settle.” – Steve Jobs"
-                    ];
-                    var randomN = Math.floor(Math.random() * dict.length);
-                    document.getElementById('displayQuote').innerHTML = dict[randomN];
-                }
-            </script>
-        </div>
-        <button id="quoteBtn" onClick=generateQuote()> Generate a Quote</button>
+    <div id="displayQuote">
+        <script>
+            function generateQuote(){
+                var dict = [
+                    "“Keep your face to the sunshine and you cannot see a shadow.” - Helen Keller",
+                    "“Success is not final, failure is not fatal: it is the courage to continue that counts.” - Winston Churchill",
+                    "“Nothing is impossible, the word itself says 'I'm possible'” - Audrey Hepburn",
+                    "“I can't change the direction of the wind, but I can adjust my sails to always reach my destination.” - Jimmy Dean",
+                    "“It is never too late to be what you might have been.” - George Eliot",
+                    "“Believe you can and you’re halfway there.” - Theodore Roosevelt",
+                    "“The only way to do great work is to love what you do. If you haven’t found it yet, keep looking. Don’t settle.” – Steve Jobs"
+                ];
+                var randomN = Math.floor(Math.random() * dict.length);
+                document.getElementById('displayQuote').innerHTML = dict[randomN];
+            }
+        </script>
     </div>
+    <button id="quoteBtn" onClick=generateQuote()> Generate a Quote</button>
+    <img class="gif" src="Ocean.gif" alt="calming gif of waves" /> 
 </div>
 <script src="../ITGS IA/Unnamed Site 2/js/jquery-3.4.1.min.js"></script>
 <script src="../ITGS IA/Unnamed Site 2/js/popper.min.js"></script>

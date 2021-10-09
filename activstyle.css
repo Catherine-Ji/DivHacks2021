@@ -1,9 +1,16 @@
 body {
-    background-color: lightblue;
+   background-color:aliceblue;
   }
   
-  h1 {
-    color: navy;
-    margin-left: 20px;
+h1 {
+    color: black;
+    text-align: center;
+    font-size: 25px;
   }
-    
+
+ h2 {
+  color: black;
+  margin-left: 500px;
+  font-size: 22px;  
+ }
+  

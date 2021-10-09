@@ -7,14 +7,17 @@
 	background-color:#AEDDE9;
 	text-align: center;
 }
-.h1 {
-	text-align:center;
-	vertical-align: center;
-    
+h1 {
+    vertical-align: center;
+    color: #CC7B7D;
+	margin-left:35%;
 }
-#header p {
+p {
     text-align:center;
 	vertical-align: center;
+	width:50%;
+	align-self: center;
+	
 }
 iframe{
     margin-left: 25%;
@@ -39,4 +42,6 @@ iframe{
             padding: 30px 20px;
             box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.5);
         }
- 
+#trees{
+}
+
