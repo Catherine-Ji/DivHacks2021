@@ -1,0 +1,86 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Wellness App</title>
+<link href="bootstrap-4.4.1.css" rel="stylesheet" type="text/css">
+<link href="stylesheet.css" rel="stylesheet" type="text/css">
+</head>
+
+<body style="padding-top: 70px">
+<nav class="navbar fixed-top navbar-expand-lg navbar-dark navbar-custom"> <a class="navbar-brand" href="#">Wellness App</a>
+	  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent1" aria-controls="navbarSupportedContent1" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> </button>
+	  <div class="collapse navbar-collapse" id="navbarSupportedContent1">
+	    <ul class="navbar-nav mr-auto">
+	      <li class="nav-item"> <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a> </li>
+		  <li class="nav-item"> <a class="nav-link" href="#">Activities</a> </li>
+			<li class="nav-item"> <a class="nav-link" href="#">Achievements</a> </li>
+			<li class="nav-item"> <a class="nav-link" href="#">Daily Survey</a> </li>
+			<li class="nav-item active"> <a class="nav-link" href="gratitude.html">Gratitude </a> </li>
+			<li class="nav-item"> <a class="nav-link" href="quotes.html">Inspirational Quotes</a> </li>
+		  <li class="nav-item"> <a class="nav-link" href="meditation.html">Meditation</a> </li>
+        </ul>
+	    
+  </div>
+</nav>
+
+	<h1>Daily Gratitude Survey</h1>
+  
+    <!-- Create Form -->
+ <form id="form">
+ 	First thing you're grateful for today:
+	 <TEXTAREA name="Comments" cols=60 rows=6 id="gratitude1"></TEXTAREA>        
+	 
+	 Second thing you're grateful for today:
+	 <TEXTAREA name="Comments" cols=60 rows=6 id="gratitude2"> </TEXTAREA> 
+	 
+	 Third thing you're grateful for today:
+	 <TEXTAREA name="Comments" cols=60 rows=6 id="gratitude3"></TEXTAREA> 
+	 	
+	  <button type="submit" value="submit" onclick="saveFile()">
+            Submit
+        </button>
+	</form>
+
+<script src="jquery-3.4.1.min.js"></script>
+<script src="popper.min.js"></script>
+<script src="bootstrap-4.4.1.js"></script>
+<script>
+    let saveFile = () => {
+    	
+        // Get the data from each element on the form.
+    	const grate1 = document.getElementById('gratitude1');
+        const grate2 = document.getElementById('gratitude2');
+        const grate2 = document.getElementById('gratitude3');
+
+        
+        // This variable stores all the data.
+        let data = 
+            '\r Gratitude 1: ' + grate1.value + ' \r\n ' + 
+            'Gratitude 2: ' +grate2.value + ' \r\n ' + 
+            'Gratitude 3: ' + grate3.value;
+        
+        // Convert the text to BLOB.
+        const textToBLOB = new Blob([data], { type: 'text/plain' });
+        const sFileName = 'formData.txt';	   // The file to save the data.
+
+        let newLink = document.createElement("a");
+        newLink.download = sFileName;
+
+        if (window.webkitURL != null) {
+            newLink.href = window.webkitURL.createObjectURL(textToBLOB);
+        }
+        else {
+            newLink.href = window.URL.createObjectURL(textToBLOB);
+            newLink.style.display = "none";
+            document.body.appendChild(newLink);
+        }
+
+        newLink.click(); 
+    }
+</script>
+	
+</body>
+</html>
