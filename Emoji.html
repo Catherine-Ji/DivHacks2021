@@ -3,25 +3,29 @@
   <head>
     <meta charset="utf-8">
     <title>Hello, world!</title>
+    <link rel="stylesheet" href="Emoji.css" type="text/css">
   </head>
   <body>
-    <h1>Good Morning, how are you feeling today?</h1>
-    <p>My first web page.</p>
-    <p style="color:blue;">Rate your mood today.</p>
-    <p style="color:blue;font-size:18px;background-color:powderblue;">This is demo text</p>  
-    <p style ="font-family:garamond"> Not today </p> 
-    <p>&#x1F601</p>  	
-    <p>&#x1F60C</p>  
-    <p>&#x1F610</p>
-    <label for="dropdown">How are you feeling today?</label>
-    <select name="dropdown" id="dropdown" required>
-      <option></option>
-      <option value="">🙂</option>
-      <option value="">😤</option>
-      <option value="">😒</option>
-      <option value="">😥</option>
-      <option value="">😩</option>
-    </select>
+    <div align="center">
+    <h1>Good Morning. How are you feeling today?</h1>
+    <p style ="font-family:garamond"> </p> 
+  
+  </div>
+  <h2> 
+    <div align="center"></div>
+      <p align="center"></p>
+      <input type="range" min="0" max="5" step="1">
+      <p>Check your mood today</p>
+      <div id="emoji-container">
+      <label for="emoji-1">Happy</label>
+      <input value="" type="checkbox" name="emoji-1" id="emoji-1" />
+      <label for="emoji-2">Sad</label>
+      <input value="" type="checkbox" name="emoji-2" id="emoji-2" />
+      <label for="emoji-3">Angry</label>
+      <input value="" type="checkbox" name="emoji-3" id="emoji-3" />
+      <label for="emoji-4">Concerned</label>
+      <input value="" type="checkbox" name="emoji-2" id="emoji-4" />
+    </h2>
   </div>
   </body>
 </html>
