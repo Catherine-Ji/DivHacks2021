@@ -1,0 +1,44 @@
+.title{
+    font-size: 50px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color:peru;
+    text-align: center;
+}
+body{
+    background-color: blanchedalmond;
+}
+
+.description{
+    font-weight: normal;
+    text-align: center;
+    width: 80%;
+    margin-left: 10%;
+
+}
+
+.container{ 
+    display: flex;  
+    justify-content: center;  
+    align-items: center;  
+}
+
+#displayQuote{
+    padding-top: 20px;
+    text-align: center;
+    padding-bottom:20px;
+    color:sienna;
+    text-shadow: 10px;
+    font-size: large;
+}
+
+#quoteBtn{
+    color: white;
+}
+
+button {
+    margin: 0 auto;
+    display: block;
+    font-size: 20px;
+    border-color: transparent;
+    background-color: coral;
+}

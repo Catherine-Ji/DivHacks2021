@@ -7,6 +7,7 @@
 <title>Wellness App</title>
 <link href="bootstrap-4.4.1.css" rel="stylesheet" type="text/css">
 <link href="stylesheet.css" rel="stylesheet" type="text/css">
+<link href="quotes.css" rel="stylesheet" type="text/css">
 </head>
 
 <body style="padding-top: 70px">
@@ -14,35 +15,40 @@
 	  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent1" aria-controls="navbarSupportedContent1" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> </button>
 	  <div class="collapse navbar-collapse" id="navbarSupportedContent1">
 	    <ul class="navbar-nav mr-auto">
-	      <li class="nav-item active"> <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a> </li>
+	      <li class="nav-item"> <a class="nav-link" href="index.html">Home</a> </li>
 		  <li class="nav-item"> <a class="nav-link" href="#">Activities</a> </li>
 			<li class="nav-item"> <a class="nav-link" href="#">Achievements</a> </li>
 			<li class="nav-item"> <a class="nav-link" href="#">Daily Survey</a> </li>
 			<li class="nav-item"> <a class="nav-link" href="#">Gratitude</a> </li>
-			<li class="nav-item"> <a class="nav-link" href="quotes.html">Inspirational Quotes</a> </li>
+			<li class="nav-item active"> <a class="nav-link" href="quotes.html">Inspirational Quotes<span class="sr-only">(current)</span></a> </li>
 		  <li class="nav-item"> <a class="nav-link" href="#">Meditation</a> </li>
         </ul>
 	    
   </div>
 </nav>
 <div>
-	<h1>Daily Inspirational Quotes!</h1>
-	<div id="displayQuote">
-		<script>
-			function generateQuote(){
-				var dict = [
-                    "Keep your face to the sunshine and you cannot see a shadow.-Helen Keller",
-                    "Success is not final, failure is not fatal: it is the courage to continue that counts.-Winston Churchill",
-                     "Nothing is impossible, the word itself says 'I'm possible'-Audrey Hepburn",
-                    "I can't change the direction of the wind, but I can adjust my sails to always reach my destination.-Jimmy Dean",
-                    "It is never too late to be what you might have been.-George Eliot"
-                ];
-				var randomN = Math.floor(Math.random() * dict.length);
-				document.getElementById('displayQuote').innerHTML = dict[randomN];
-			}
-		</script>
-	</div>
-	<button onClick=generateQuote()> Generate a New Quote</button>
+	<div class="title">Daily Inspirational Quotes</div>
+    <h3 class="description">Welcome to the Inspiration Quotes page, a place where we can offer you a little mood boost🥰 <br>Click on the button below to view a new quote!</h3>
+    <div class="container"></div>
+        <div id="displayQuote">
+            <script>
+                function generateQuote(){
+                    var dict = [
+                        "“Keep your face to the sunshine and you cannot see a shadow.” - Helen Keller",
+                        "“Success is not final, failure is not fatal: it is the courage to continue that counts.” - Winston Churchill",
+                        "“Nothing is impossible, the word itself says 'I'm possible'” - Audrey Hepburn",
+                        "“I can't change the direction of the wind, but I can adjust my sails to always reach my destination.” - Jimmy Dean",
+                        "“It is never too late to be what you might have been.” - George Eliot",
+                        "“Believe you can and you’re halfway there.” - Theodore Roosevelt",
+                        "“The only way to do great work is to love what you do. If you haven’t found it yet, keep looking. Don’t settle.” – Steve Jobs"
+                    ];
+                    var randomN = Math.floor(Math.random() * dict.length);
+                    document.getElementById('displayQuote').innerHTML = dict[randomN];
+                }
+            </script>
+        </div>
+        <button id="quoteBtn" onClick=generateQuote()> Generate a Quote</button>
+    </div>
 </div>
 <script src="../ITGS IA/Unnamed Site 2/js/jquery-3.4.1.min.js"></script>
 <script src="../ITGS IA/Unnamed Site 2/js/popper.min.js"></script>
