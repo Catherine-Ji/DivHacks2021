@@ -1,31 +1,55 @@
 <!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <title>Hello, world!</title>
-    <link rel="stylesheet" href="Emoji.css" type="text/css">
-  </head>
-  <body>
-    <div align="center">
-    <h1>Good Morning. How are you feeling today?</h1>
-    <p style ="font-family:garamond"> </p> 
-  
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Wellness App</title>
+<link href="bootstrap-4.4.1.css" rel="stylesheet" type="text/css">
+<link href="Emoji.css" rel="stylesheet" type="text/css">
+</head>
+
+<body style="padding-top: 70px">
+<nav class="navbar fixed-top navbar-expand-lg navbar-dark navbar-custom"> <a class="navbar-brand" href="#">𝕎𝕖𝕝𝕝 ℍ𝕒𝕔𝕜𝕤</a>
+	  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent1" aria-controls="navbarSupportedContent1" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> </button>
+	  <div class="collapse navbar-collapse" id="navbarSupportedContent1">
+	    <ul class="navbar-nav mr-auto">
+	      <li class="nav-item active"> <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a> </li>
+		  <li class="nav-item"> <a class="nav-link" href="activitiespg.html">Activities</a> </li>
+			<li class="nav-item"> <a class="nav-link" href="emoji.html">Daily Survey</a> </li>
+			<li class="nav-item"> <a class="nav-link" href="gratitude.html">Gratitude</a> </li>
+			<li class="nav-item"> <a class="nav-link" href="quotes.html">Inspirational Quotes</a> </li>
+		  <li class="nav-item"> <a class="nav-link" href="meditation.html">Meditation</a> </li>
+        </ul>
+	    
   </div>
-  <h2> 
-    <div align="center"></div>
-      <p align="center"></p>
-      <input type="range" min="0" max="5" step="1">
-      <p>Check your mood today</p>
-      <div id="emoji-container">
-      <label for="emoji-1">Happy</label>
+</nav>
+
+<div id="survey"> 
+    <p align="center"></p>
+
+    <p>Check your mood today</p>
+    <div align="center" id="emoji-container">
+      <label for="emoji-1">Happy😄</label>
       <input value="" type="checkbox" name="emoji-1" id="emoji-1" />
-      <label for="emoji-2">Sad</label>
+      <br>
+      <label for="emoji-2">Sad😔 </label>
       <input value="" type="checkbox" name="emoji-2" id="emoji-2" />
-      <label for="emoji-3">Angry</label>
+      <br>
+      <label for="emoji-3">Angry😡</label>
       <input value="" type="checkbox" name="emoji-3" id="emoji-3" />
-      <label for="emoji-4">Concerned</label>
+      <br>
+      <label for="emoji-4">Concerned😖</label>
       <input value="" type="checkbox" name="emoji-2" id="emoji-4" />
-    </h2>
+    </div>
   </div>
-  </body>
+</h2>
+
+
+
+<script src="jquery-3.4.1.min.js"></script>
+<script src="popper.min.js"></script>
+<script src="bootstrap-4.4.1.js"></script>
+	
+</body>
 </html>
